@@ -352,7 +352,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 530446221}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1144218441}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &530446221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,7 +702,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: 1}
+  m_AnchoredPosition: {x: 9, y: 1}
   m_SizeDelta: {x: 51.92, y: 51.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649458781
@@ -813,7 +825,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 686690911}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1144218446}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &686690911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1121,6 +1145,7 @@ GameObject:
   - component: {fileID: 1144218445}
   - component: {fileID: 1144218444}
   - component: {fileID: 1144218443}
+  - component: {fileID: 1144218446}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1212,6 +1237,19 @@ Canvas:
   m_SortingLayerID: 599736795
   m_SortingOrder: 10
   m_TargetDisplay: 0
+--- !u!114 &1144218446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144218441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef93dd55589b4bc5b5676d2db022dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  optionsPanel: {fileID: 1237013674}
 --- !u!1 &1166017184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,7 +1332,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1166017187}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1144218446}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: Return
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1166017187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1486,7 +1536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1237013675
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1856,7 +1906,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1689119495}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1144218446}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: OptionsPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1689119495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3462,7 +3524,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2138306417}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1144218441}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2138306417
 MonoBehaviour:
   m_ObjectHideFlags: 0
