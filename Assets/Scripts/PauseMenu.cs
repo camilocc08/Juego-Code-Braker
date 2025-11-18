@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public GameObject optionsPanel;
-
+    
     public void OptionsPanel()
     {
         Time.timeScale=0;
@@ -18,6 +18,11 @@ public class UIManager : MonoBehaviour
     {
         Time.timeScale=1;
         optionsPanel.SetActive(false);
+    }
+    public void Menu()
+    {
+        Time.timeScale=1;
+        SceneManager.LoadScene("MenuInicial");
     }
 
     public void QuitGame()
