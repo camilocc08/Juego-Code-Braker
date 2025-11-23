@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
+    [Header("Movimiento")]
     public float speed = 5f;
-    public float jumpForce = 5.1f;
+    public float jumpForce = 5f;
 
     private Rigidbody2D rb2D;
     private bool isGrounded;
@@ -35,29 +36,29 @@ public class NewMonoBehaviourScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
             rb2D.linearVelocity = new Vector2(rb2D.linearVelocity.x, jumpForce);
-            animator.SetTrigger("Jump"); // Usa tu parámetro Jump
+            if (animator != null)
+                animator.SetTrigger("Jump");
             isGrounded = false;
         }
 
-        // Actualizar parámetros del Animator
-        animator.SetFloat("Speed", Mathf.Abs(move));
-        animator.SetFloat("VerticalVel", rb2D.linearVelocity.y);
-        animator.SetBool("isGrounded", isGrounded);
+        // Animator parámetros
+        if (animator != null)
+        {
+            animator.SetFloat("Speed", Mathf.Abs(move));
+            animator.SetFloat("VerticalVel", rb2D.linearVelocity.y);
+            animator.SetBool("isGrounded", isGrounded);
+        }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Floor"))
-        {
             isGrounded = true;
-        }
     }
 
-    void OnCollisionExit2D(Collision2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Floor"))
-        {
             isGrounded = false;
-        }
     }
 }

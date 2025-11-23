@@ -1,72 +1,50 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public CanvasGroup gameOverCanvas;
-    public float fadeDuration = 1f;
-    private bool isGameOver = false;
+    [Header("Game Over UI")]
+    public GameObject gameOverPanel;
 
     private void Awake()
     {
-        // Singleton: solo un GameManager global
+        // Singleton para que solo haya un GameManager
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // persiste entre escenas
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Destroy(gameObject); // elimina duplicados
+            Destroy(gameObject);
         }
     }
 
     private void Start()
     {
-        if (gameOverCanvas != null)
-        {
-            gameOverCanvas.alpha = 0;
-            gameOverCanvas.gameObject.SetActive(false);
-        }
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(false);
     }
 
-    public void GameOver()
+    public void ShowGameOver()
     {
-        if (!isGameOver)
-        {
-            isGameOver = true;
-            gameOverCanvas.gameObject.SetActive(true);
-            Time.timeScale = 0f;
-            StartCoroutine(FadeIn());
-        }
-    }
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(true);
 
-    private System.Collections.IEnumerator FadeIn()
-    {
-        float elapsed = 0f;
-        while (elapsed < fadeDuration)
-        {
-            elapsed += Time.unscaledDeltaTime;
-            gameOverCanvas.alpha = Mathf.Clamp01(elapsed / fadeDuration);
-            yield return null;
-        }
-        gameOverCanvas.alpha = 1f;
+        Time.timeScale = 0f; // Pausa el juego
     }
 
     public void RestartLevel()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        isGameOver = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void QuitToMenu()
+    public void GoToMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu"); // asegúrate de que exista la escena MainMenu
-        isGameOver = false;
+        SceneManager.LoadScene("MainMenu");
     }
 }
