@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem; // Necesario para el nuevo Input System
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,6 +11,32 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private Animator animator;
 
+    private InputSystem_Actions controls;
+    private Vector2 moveInput;
+    private bool jumpPressed;
+
+    void Awake()
+    {
+        controls = new InputSystem_Actions();
+
+        // Movimiento
+        controls.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
+        controls.Player.Move.canceled  += ctx => moveInput = Vector2.zero;
+
+        // Saltar
+        controls.Player.Jump.performed += ctx => jumpPressed = true;
+    }
+
+    void OnEnable()
+    {
+        controls.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Disable();
+    }
+
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -18,30 +45,26 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        float move = 0f;
-
         // Movimiento horizontal
-        if (Input.GetKey(KeyCode.A))
-            move = -1f;
-        else if (Input.GetKey(KeyCode.D))
-            move = 1f;
+        float move = moveInput.x;
 
         rb2D.linearVelocity = new Vector2(move * speed, rb2D.linearVelocity.y);
 
-        // Flip del personaje
         if (move != 0)
             transform.localScale = new Vector3(Mathf.Sign(move), 1, 1);
 
         // Saltar
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
+        if (jumpPressed && isGrounded)
         {
             rb2D.linearVelocity = new Vector2(rb2D.linearVelocity.x, jumpForce);
             if (animator != null)
                 animator.SetTrigger("Jump");
+
             isGrounded = false;
         }
+        jumpPressed = false;
 
-        // Animator parámetros
+        // Animator
         if (animator != null)
         {
             animator.SetFloat("Speed", Mathf.Abs(move));
