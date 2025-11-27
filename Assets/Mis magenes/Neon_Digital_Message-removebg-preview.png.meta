@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: f866134344d53465385f085475b5d8e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3357242589978401484
+    second: Neon_Digital_Message-removebg-preview_0
+  - first:
+      213: -1478000427455734255
+    second: Neon_Digital_Message-removebg-preview_1
+  - first:
+      213: -7938854629945361891
+    second: Neon_Digital_Message-removebg-preview_2
+  - first:
+      213: -501457118249892268
+    second: Neon_Digital_Message-removebg-preview_3
+  - first:
+      213: -7184763349942523165
+    second: Neon_Digital_Message-removebg-preview_4
+  - first:
+      213: 7509970924620114973
+    second: Neon_Digital_Message-removebg-preview_5
+  - first:
+      213: -5789764580447169215
+    second: Neon_Digital_Message-removebg-preview_6
+  - first:
+      213: 4995670497583823534
+    second: Neon_Digital_Message-removebg-preview_7
+  - first:
+      213: -8965688638737338226
+    second: Neon_Digital_Message-removebg-preview_8
+  - first:
+      213: -3866933014837248950
+    second: Neon_Digital_Message-removebg-preview_9
+  - first:
+      213: 7883203096252062906
+    second: Neon_Digital_Message-removebg-preview_10
+  - first:
+      213: 6615728907235778936
+    second: Neon_Digital_Message-removebg-preview_11
+  - first:
+      213: -7119340665401963688
+    second: Neon_Digital_Message-removebg-preview_12
+  - first:
+      213: -4043358812842281435
+    second: Neon_Digital_Message-removebg-preview_13
+  - first:
+      213: -8584672294632507932
+    second: Neon_Digital_Message-removebg-preview_14
+  - first:
+      213: -5607744959892204977
+    second: Neon_Digital_Message-removebg-preview_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 263
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435668fd6ada861d0800000000000000
+      internalID: -3357242589978401484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 263
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e10a721761d7be0800000000000000
+      internalID: -1478000427455734255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 263
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a34a2a6c583d190800000000000000
+      internalID: -7938854629945361891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 263
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456cf9468677a09f0800000000000000
+      internalID: -501457118249892268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 263
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea2e6bbcc79a4c90800000000000000
+      internalID: -7184763349942523165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 263
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c6e7334c6c83860800000000000000
+      internalID: 7509970924620114973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 263
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145de412acf96afa0800000000000000
+      internalID: -5789764580447169215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 263
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaaf16f69df245540800000000000000
+      internalID: 4995670497583823534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 263
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e803e417fa9739380800000000000000
+      internalID: -8965688638737338226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 263
+        width: 40
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c356039e4e55ac0800000000000000
+      internalID: -3866933014837248950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 181
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc1d54f273c66d60800000000000000
+      internalID: 7883203096252062906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 181
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8716216b36acfcb50800000000000000
+      internalID: 6615728907235778936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 181
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b09bb7265033d90800000000000000
+      internalID: -7119340665401963688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 181
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5263715159a13e7c0800000000000000
+      internalID: -4043358812842281435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 181
+        width: 34
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5ba45180e1dd880800000000000000
+      internalID: -8584672294632507932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon_Digital_Message-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 181
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4253aa8ba94d22b0800000000000000
+      internalID: -5607744959892204977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Neon_Digital_Message-removebg-preview_0: -3357242589978401484
+      Neon_Digital_Message-removebg-preview_1: -1478000427455734255
+      Neon_Digital_Message-removebg-preview_10: 7883203096252062906
+      Neon_Digital_Message-removebg-preview_11: 6615728907235778936
+      Neon_Digital_Message-removebg-preview_12: -7119340665401963688
+      Neon_Digital_Message-removebg-preview_13: -4043358812842281435
+      Neon_Digital_Message-removebg-preview_14: -8584672294632507932
+      Neon_Digital_Message-removebg-preview_15: -5607744959892204977
+      Neon_Digital_Message-removebg-preview_2: -7938854629945361891
+      Neon_Digital_Message-removebg-preview_3: -501457118249892268
+      Neon_Digital_Message-removebg-preview_4: -7184763349942523165
+      Neon_Digital_Message-removebg-preview_5: 7509970924620114973
+      Neon_Digital_Message-removebg-preview_6: -5789764580447169215
+      Neon_Digital_Message-removebg-preview_7: 4995670497583823534
+      Neon_Digital_Message-removebg-preview_8: -8965688638737338226
+      Neon_Digital_Message-removebg-preview_9: -3866933014837248950
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

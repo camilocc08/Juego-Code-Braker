@@ -15,10 +15,13 @@ public class PlayerRespawn : MonoBehaviour
     public Sprite emptyHeart;
 
     [Header("Animator")]
-    public Animator animator;   // Mantengo tu animación Hit2
+    public Animator animator;   // Animación Hit2
 
     [Header("Pantalla de Game Over")]
     public GameObject gameOverScreen;
+
+    [Header("Escena a cargar cuando muere")]
+    public string menuScene = "MenuInicial";   // ⭐ Ahora puedes escogerla en el inspector
 
     private bool isDead = false;
 
@@ -28,27 +31,27 @@ public class PlayerRespawn : MonoBehaviour
         UpdateHearts();
     }
 
-    // ESTE método ahora lo llama DamageObjects
+    // Método llamado por DamageObjects
     public void TakeDamage()
     {
         if (isDead) return;
 
-        // Reproducir animación de daño (LO MANTENGO)
+        // Animación de daño
         if (animator != null)
             animator.Play("Hit2");
 
-        // Restar un corazón
+        // Quitar un corazón
         currentHearts--;
         UpdateHearts();
 
-        // Si se quedó sin corazones → morir
+        // Si ya no tiene corazones → morir
         if (currentHearts <= 0)
         {
             StartCoroutine(GameOver());
         }
     }
 
-    // Actualiza los corazones en pantalla
+    // Actualiza la UI de corazones
     void UpdateHearts()
     {
         for (int i = 0; i < heartsUI.Length; i++)
@@ -68,10 +71,10 @@ public class PlayerRespawn : MonoBehaviour
         if (gameOverScreen != null)
             gameOverScreen.SetActive(true);
 
-        // Esperar 3 segs
+        // Esperar
         yield return new WaitForSeconds(3f);
 
-        // Volver al menú
-        SceneManager.LoadScene("MenuInicial");
+        // 🔥 Cargar la escena que tú elijas desde Unity
+        SceneManager.LoadScene(menuScene);
     }
 }
